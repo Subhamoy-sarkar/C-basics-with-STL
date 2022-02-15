@@ -1,0 +1,3 @@
+file: data ka collection jo ki aap disk par store karke rakh sakte ho
+c++ program can write to file and also read the file
+stream : input stream and output stream 
