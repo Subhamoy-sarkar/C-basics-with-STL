@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std; 
-void g(){                               // yeh na kuch leta hei,na kuch return karta hei
+void g(){                               // void funct kuch return nahi karta hei
     cout<<"Good night , subhamoy!!";
 }
 int main(){

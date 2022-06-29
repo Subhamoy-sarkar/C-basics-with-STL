@@ -7,7 +7,7 @@ using namespace std;
 
 int main(){
     map<string,int>marksMap;
-    marksMap["Harry"]=99;
+    marksMap["Harry"]=99;   //  O(log(n));
     marksMap["subho"]=98;
     marksMap["Rohan"]=34;
 
@@ -15,6 +15,10 @@ int main(){
     map<string,int> :: iterator itr;
     for(itr=marksMap.begin();itr != marksMap.end(); itr++){
         cout<<(*itr).first<<" "<<(*itr).second<<endl;
+    }
+    //or you can use:
+    for(auto &pr : marksMap){
+        cout<<pr.first<<" "<<pr.second<<endl;
     }
     cout<<"The size is : "<<marksMap.size()<<endl;
     cout<<"The max_size is : "<<marksMap.max_size()<<endl;

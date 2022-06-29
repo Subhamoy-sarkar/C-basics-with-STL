@@ -6,6 +6,7 @@
 //#include<this.h>               // it will show error unless a file is made named as- this.h ,  in the current directory(in this  case , current directory is : ch1_var_data...)
 
 // for header files: cppreference.com
+//for cp: #include<bits/stdc++.h>
 
 using namespace std;
 int main(){

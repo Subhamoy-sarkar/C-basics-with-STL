@@ -2,11 +2,10 @@
 int c=34;
 using namespace std;
 int main(){
-    // *****************************************************build in data types*****************************************************
+    // ******************************************build in data types*****************************************************
     int c=343,d=434;
     cout<<"The value of c is:"<<c<<endl<<"The value of d:"<<d<<endl;
     cout<<"The value of global c is :"<<::c;           // scope resolution operator, if we want to ignore local variable and go to global variable directly
-
     // *************************float, double and long double literals************************* 
 
     //float q=3.3;               // isko  compiler double ki tarah lega 

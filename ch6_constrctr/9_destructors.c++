@@ -18,10 +18,10 @@ int main(){
     cout<<"Creating first object n1"<<endl;
     num n1;
     {
-        cout<<"Entering this block";
+        cout<<"Entering this block"<<endl;
         cout<<"Creating two more objects"<<endl;
         num n2,n3;
-        cout<<"Existing this block";
+        cout<<"Existing this block"<<endl;
     }
     // jab compiler ko lagega ki object ka aur koi kaam nhi hei , toh wo destructor ko call kar dega
     cout<<"Back to main"<<endl;

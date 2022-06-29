@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>
 using namespace std; 
 
 template<class T>
@@ -22,7 +23,7 @@ int main(){
     // for(int i=0;i<size;i++){
     //     cout<<"Enter an element to add to this vector : ";
     //     cin>>element;
-    //     vec1.push_back(element);
+    //     vec1.push_back(element);    // if,v[n] ,i.e size of vector v is fixed, then you can't use push_back() function;
     // }
     // vec1.pop_back();     // last element ko delete kar dega
 
@@ -40,8 +41,8 @@ int main(){
 
     // 2.)
     vector<char> vec2(4); // 4-element character vector
-    // vec2.push_back('3');
-    // display(vec2);
+    vec2.push_back('3');
+    display(vec2);
     
 
     // 3.)
@@ -53,5 +54,24 @@ int main(){
     display(vec4);         // will print 3 , 6 times
     cout<<vec4.size();      
 
+    // 5.) Making vectors in pairs :
+    vector<pair<int,int>> v;
+    for(int i=0;i<5;i++){
+        v.push_back(make_pair(i,i+3));
+        cout<<v[i].first;  //only the first elements from each pair will be printed;;
+    }
+
+    //6.) Erasing elements:
+    //erase the 7th element
+    v.erase(v.begin()+6);
+
+    //erase first 3 elements
+    v.erase(v.begin(),v.begin()+3);
+
+    //6.) MAx/MIN element:
+    int a=*max_element(vec1.begin(),vec1.end());
+    int b=*min_element(vec1.begin(),vec1.end());
+
+    //7.) last element ko approach :    v.back();
     return 0;
 }

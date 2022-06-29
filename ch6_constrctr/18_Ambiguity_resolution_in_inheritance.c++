@@ -50,7 +50,7 @@ public:
 
 int main()
 {
-    // Ambiguity 1
+    // Ambiguity 1 :
     // base1 obj1;
     // base2 obj2;
     // obj1.greet();
@@ -58,7 +58,7 @@ int main()
     // derived a;
     // a.greet();     //  --> it is ambiguous if ambiguity is not resolved (it is resolved in line no. 17-20)
 
-    // ambiguity 2
+    // ambiguity 2 :
     B b;
     b.say();
     D d;
